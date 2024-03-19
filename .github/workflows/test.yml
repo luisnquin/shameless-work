@@ -1,0 +1,12 @@
+name: Test
+on: push
+jobs:
+  test-one:
+    runs-on: macos-latest
+    steps:
+      - name: Test
+        run: |
+          uname
+          uname -s
+          uname --help
+          uname -s | awk '{print $1}'
